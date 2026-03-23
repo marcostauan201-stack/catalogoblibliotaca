@@ -1,0 +1,32 @@
+/* Cores e fontes */
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f0f2f5; margin: 0; text-align: center; }
+header { background: #1a5276; color: white; padding: 30px 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
+nav { margin-top: 15px; }
+
+/* Botões */
+nav button { 
+    background: #fff; color: #1a5276; border: none; padding: 10px 20px; 
+    margin: 5px; border-radius: 20px; cursor: pointer; font-weight: bold; transition: 0.3s;
+}
+nav button:hover { background: #d4e6f1; transform: scale(1.05); }
+
+/* Grid de Livros */
+#catalogo { 
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+    gap: 20px; padding: 40px; max-width: 1200px; margin: 0 auto; 
+}
+
+/* O Card do Livro */
+.livro { 
+    background: white; border-radius: 12px; padding: 20px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05); border-top: 5px solid #ccc;
+}
+.livro h3 { margin: 10px 0; color: #333; font-size: 1.1em; }
+.livro p { color: #666; font-size: 0.9em; }
+
+/* Cores de Status */
+.disponivel { border-top-color: #27ae60; }
+.disponivel .status { color: #27ae60; font-weight: bold; }
+
+.emprestado { border-top-color: #e74c3c; opacity: 0.8; }
+.emprestado .status { color: #e74c3c; font-weight: bold; }
