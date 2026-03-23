@@ -15,7 +15,15 @@
             <button onclick="filtrar('todos')">Todos</button>
             <button onclick="filtrar('pesquisa')">Pesquisa</button>
             <button onclick="filtrar('infanto')">Infanto-juvenil</button>
-        </nav>
+        <nav>
+        <button onclick="filtrar('todos')">Todos</button>
+        <button onclick="filtrar('pesquisa')">Pesquisa</button>
+        <button onclick="filtrar('infanto')">Infanto-juvenil</button>
+    </nav>
+
+    <div class="search-container">
+        <input type="text" id="inputBusca" onkeyup="buscarLivro()" placeholder="🔎 Pesquisar por título...">
+    </div>
     </header>
 
     <main id="catalogo">
