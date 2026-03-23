@@ -28,7 +28,19 @@ function carregarCatalogo(filtro = 'todos') {
 }
 
 function filtrar(categoria) {
-    carregarCatalogo(categoria);
+    carregarCatalogo(categoria);function buscarLivro() {
+    let input = document.getElementById('inputBusca').value.toLowerCase();
+    let cards = document.getElementsByClassName('livro');
+
+    for (let i = 0; i < cards.length; i++) {
+        let titulo = cards[i].getElementsByTagName('h3')[0].innerText.toLowerCase();
+        if (titulo.includes(input)) {
+            cards[i].style.display = "";
+        } else {
+            cards[i].style.display = "none";
+        }
+    }
+}
 }
 
 // Inicia o site
