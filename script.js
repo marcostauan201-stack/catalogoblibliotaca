@@ -4,8 +4,7 @@ const livros = [
     { titulo: "Dicionário de Inglês", categoria: "pesquisa", disponivel: true },
     { titulo: "Harry Potter e a Pedra Filosofal", categoria: "infanto", disponivel: true },
     { titulo: "Geografia Geral", categoria: "pesquisa", disponivel: false },
-    { titulo: "A Turma da Mônica", categoria: "infanto", disponivel: true },
-    { titulo: "Manual de Mecânica Automotiva", categoria: "pesquisa", disponivel: true }
+    { titulo: "A Turma da Mônica", categoria: "infanto", disponivel: true }
 ];
 
 function carregarCatalogo(filtro = 'todos') {
@@ -42,9 +41,8 @@ function buscarLivro() {
 }
 
 function filtrar(cat) { 
-    document.getElementById('inputBusca').value = ""; // Limpa a busca ao trocar categoria
+    document.getElementById('inputBusca').value = ""; 
     carregarCatalogo(cat); 
 }
 
-// Inicializa o site ao carregar a página
 window.onload = () => carregarCatalogo('todos');
