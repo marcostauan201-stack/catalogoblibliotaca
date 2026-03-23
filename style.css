@@ -25,7 +25,17 @@ nav button:hover { background: #d4e6f1; transform: scale(1.05); }
 .livro p { color: #666; font-size: 0.9em; }
 
 /* Cores de Status */
-.disponivel { border-top-color: #27ae60; }
+.disponivel { border-top-color: #27ae60; } .search-container {
+    margin: 20px;
+}
+#inputBusca {
+    padding: 12px;
+    width: 300px;
+    border-radius: 25px;
+    border: 1px solid #ddd;
+    outline: none;
+    font-size: 16px;
+}
 .disponivel .status { color: #27ae60; font-weight: bold; }
 
 .emprestado { border-top-color: #e74c3c; opacity: 0.8; }
