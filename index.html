@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <header>
         <h1>📚 Biblioteca Escolar</h1>
         <p>Encontre seu próximo livro favorito</p>
@@ -15,19 +14,14 @@
             <button onclick="filtrar('todos')">Todos</button>
             <button onclick="filtrar('pesquisa')">Pesquisa</button>
             <button onclick="filtrar('infanto')">Infanto-juvenil</button>
-        <nav>
-        <button onclick="filtrar('todos')">Todos</button>
-        <button onclick="filtrar('pesquisa')">Pesquisa</button>
-        <button onclick="filtrar('infanto')">Infanto-juvenil</button>
-    </nav>
+        </nav>
+    </header>
 
     <div class="search-container">
         <input type="text" id="inputBusca" onkeyup="buscarLivro()" placeholder="🔎 Pesquisar por título...">
     </div>
-    </header>
 
-    <main id="catalogo">
-        </main>
+    <main id="catalogo"></main>
 
     <script src="script.js"></script>
 </body>
